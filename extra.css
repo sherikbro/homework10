@@ -7,6 +7,9 @@
   font-family: sans-serif;
   scroll-behavior: smooth;
 }
+* button {
+  cursor: pointer;
+}
 
 .container {
   padding: 0 8%;
@@ -399,5 +402,261 @@ input[type=checkbox]:checked + ul {
     font-size: 10px;
     left: -15px;
     top: 40%;
+  }
+}
+.reyting {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5%;
+}
+.reyting .reyting-img {
+  padding-top: 5%;
+}
+.reyting .reyting-img img {
+  border-radius: 30px;
+  width: 100%;
+}
+.reyting .reyting-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.reyting .reyting-text h2 {
+  font-size: 42px;
+  color: #0F1F1C;
+}
+.reyting .reyting-text .reyting-text__alpanasap {
+  display: flex;
+  gap: 5%;
+}
+.reyting .reyting-text .reyting-text__alpanasap .reyting-text__alpimg {
+  background-color: #FF584E;
+  border-radius: 100px;
+  align-items: center;
+}
+.reyting .reyting-text .reyting-text__alpanasap .reyting-text__alpimg img {
+  width: 100%;
+  height: 95%;
+}
+.reyting .reyting-text .reyting-text__alpanasap .reyting-text__alptext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5%;
+  align-items: center;
+}
+.reyting .reyting-text .reyting-text__alpanasap .reyting-text__alptext h4 {
+  font-size: 33px;
+  color: #0F1F1C;
+}
+.reyting .reyting-text .reyting-text__alpanasap .reyting-text__alptext p {
+  font-size: 25px;
+  color: #0F1F1C;
+}
+.reyting .reyting-text p {
+  font-size: 22px;
+  color: #0F1F1C;
+}
+.reyting .reyting-text .reyting-text__icon i {
+  font-size: 50px;
+}
+.reyting .reyting-text .reyting-text__icon .star-gold {
+  color: gold;
+}
+.reyting .reyting-text .reyting-text__icon .star-white {
+  color: #C4C4C4;
+}
+
+@media (min-width: 1300px) {
+  .reyting .reyting-img {
+    padding: 6%;
+  }
+}
+@media (max-width: 1024px) {
+  .reyting .reyting-text h2 {
+    font-size: 36px;
+  }
+  .reyting .reyting-text p {
+    font-size: 16px;
+  }
+  .reyting .reyting-text .reyting-text__alpanasap .reyting-text__alpimg {
+    height: 100px;
+  }
+  .reyting .reyting-text .reyting-text__alpanasap .reyting-text__alptext h4 {
+    font-size: 26px;
+  }
+  .reyting .reyting-text .reyting-text__alpanasap .reyting-text__alptext p {
+    font-size: 20px;
+  }
+  .reyting .reyting-text .reyting-text__icon i {
+    font-size: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .reyting {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .reyting .reyting-text {
+    gap: 20px;
+  }
+  .reyting .reyting-text h2 {
+    font-size: 28px;
+  }
+  .reyting .reyting-text p {
+    font-size: 14px;
+  }
+  .reyting .reyting-text .reyting-text__alpanasap .reyting-text__alpimg {
+    height: 100px;
+  }
+  .reyting .reyting-text .reyting-text__alpanasap .reyting-text__alptext h4 {
+    font-size: 23px;
+  }
+  .reyting .reyting-text .reyting-text__alpanasap .reyting-text__alptext p {
+    font-size: 16px;
+  }
+  .reyting .reyting-text .reyting-text__icon i {
+    font-size: 20px;
+  }
+}
+.started {
+  margin-top: 70px;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  position: relative;
+}
+.started h2 {
+  font-size: 45px;
+  text-align: center;
+  color: #0F1F1C;
+}
+.started p {
+  font-size: 30px;
+  text-align: center;
+  color: #0F1F1C;
+}
+.started button {
+  padding: 3% 9%;
+  border-radius: 20px;
+  background: linear-gradient(to right, #FF7B4E, #FF584E);
+  font-size: 20px;
+  color: white;
+  border: none;
+}
+.started .started1 {
+  width: 50px;
+  height: 60px;
+  position: absolute;
+  bottom: 7%;
+  left: 7%;
+}
+.started .started2 {
+  width: 50px;
+  height: 60px;
+  position: absolute;
+  top: 7%;
+  right: 7%;
+}
+
+@media (max-width: 768px) {
+  .started h2 {
+    font-size: 30px;
+  }
+  .started p {
+    font-size: 20px;
+  }
+  .started button {
+    font-size: 14px;
+  }
+  .started img {
+    width: 30px;
+    height: 40px;
+  }
+}
+.subscribe {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  gap: 30px;
+}
+.subscribe h2 {
+  font-size: 55px;
+  color: #0F1F1C;
+}
+.subscribe form {
+  display: flex;
+  width: 50%;
+}
+.subscribe form input {
+  padding: 5% 15%;
+  border: none;
+}
+.subscribe form input::-moz-placeholder {
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 1.4px;
+  color: #0F1F1C;
+}
+.subscribe form input::placeholder {
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 1.4px;
+  color: #0F1F1C;
+}
+.subscribe form button {
+  padding: 4% 8%;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  font-size: 20px;
+  background: linear-gradient(to bottom right, #FF7B4E, #FF584E);
+}
+
+@media (max-width: 1024px) {
+  .subscribe h2 {
+    font-size: 42px;
+  }
+  .subscribe form {
+    flex-direction: column;
+  }
+  .subscribe form input::-moz-placeholder {
+    font-size: 17px;
+    text-align: center;
+  }
+  .subscribe form input::placeholder {
+    font-size: 17px;
+    text-align: center;
+  }
+  .subscribe form button {
+    font-size: 15px;
+  }
+}
+@media (max-width: 678px) {
+  .subscribe {
+    gap: 20px;
+  }
+  .subscribe h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .subscribe form {
+    flex-direction: column;
+  }
+  .subscribe form input::-moz-placeholder {
+    font-size: 12px;
+    text-align: center;
+  }
+  .subscribe form input::placeholder {
+    font-size: 12px;
+    text-align: center;
+  }
+  .subscribe form button {
+    font-size: 13px;
   }
 }/*# sourceMappingURL=extra.css.map */
